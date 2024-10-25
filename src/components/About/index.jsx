@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
+import AboutCard from "../AboutCard";
 // import './'
 const About = () => {
   return (
@@ -8,7 +9,7 @@ const About = () => {
     <section>
         {/* About first component */}
     <div>
-        <div className="about-area two ptb-120">
+        <div className="about-area bg-color-0c3a30 ptb-120 overflow-hidden">
           <div className="container">
             <div className="row align-items-center">
               <div
@@ -21,8 +22,8 @@ const About = () => {
                     <span className="sub-title two bg-color-9edd05 rounded-pill">
                       ABOUT FINTO
                     </span>
-                    <h2>Your Right Path To Smart Financial Decisions</h2>
-                    <p>
+                    <h2 className="text-white">Your Right Path To Smart Financial Decisions</h2>
+                    <p className="text-white">
                       With a robust suite of products ranging from digital
                       banking and payment processing to wealth management and
                       blockchain applications we empower our clients
@@ -75,6 +76,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <AboutCard/>
     </section>
     </>
   );
